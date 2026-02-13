@@ -1,50 +1,98 @@
-# Welcome to your Expo app 👋
+# Aula 1 - Tela de Login Simples
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um projeto [Expo](https://expo.dev) desenvolvido com React Native para criar uma tela de login simples.
 
-## Get started
+## 📋 Pré-requisitos
 
-1. Install dependencies
+Antes de começar, certifique-se de ter instalado:
 
-   ```bash
-   npm install
-   ```
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)
+- [Git](https://git-scm.com/)
+- [Expo Go](https://expo.dev/go) no seu dispositivo móvel (opcional, para testar no celular)
 
-2. Start the app
+## 🚀 Como rodar o projeto
 
-   ```bash
-   npx expo start
-   ```
+### 1. Clonar o repositório
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Primeiro, clone o repositório para o seu computador:
 
 ```bash
-npm run reset-project
+git clone <URL_DO_REPOSITORIO>
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Depois, entre na pasta do projeto:
 
-## Learn more
+```bash
+cd aula-1-tela-login-simples
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 2. Instalar dependências
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Instale todas as dependências necessárias do projeto:
 
-## Join the community
+```bash
+npm install
+```
 
-Join our community of developers creating universal apps.
+### 3. Iniciar o projeto
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Para iniciar o servidor de desenvolvimento:
+
+```bash
+npm run start
+```
+
+Ou você pode usar:
+
+```bash
+npx expo start
+```
+
+### 4. Executar em diferentes plataformas
+
+Após iniciar o projeto, você verá um QR code no terminal. Você pode:
+
+- **Android**: Pressione `a` no terminal ou execute `npm run android` (requer Android Studio e emulador configurado)
+- **iOS**: Pressione `i` no terminal ou execute `npm run ios` (requer Xcode e simulador configurado - apenas macOS)
+- **Web**: Pressione `w` no terminal ou execute `npm run web`
+- **Expo Go**: Escaneie o QR code com o app Expo Go no seu celular
+
+## 📱 Testando no dispositivo móvel
+
+1. Instale o app **Expo Go** na App Store (iOS) ou Google Play Store (Android)
+2. Execute `npm run start` no terminal
+3. Escaneie o QR code que aparece no terminal com o app Expo Go
+4. O app será carregado no seu dispositivo
+
+## 📁 Estrutura do projeto
+
+```
+aula-1-tela-login-simples/
+├── app/                 # Rotas e páginas principais
+├── src/
+│   ├── components/      # Componentes reutilizáveis
+│   ├── screens/         # Telas da aplicação
+│   └── assets/          # Imagens e recursos
+├── package.json         # Dependências do projeto
+└── README.md           # Este arquivo
+```
+
+## 🛠️ Comandos disponíveis
+
+- `npm run start` - Inicia o servidor de desenvolvimento
+- `npm run android` - Inicia no emulador Android
+- `npm run ios` - Inicia no simulador iOS
+- `npm run web` - Inicia no navegador web
+- `npm run lint` - Executa o linter para verificar erros de código
+
+## 📚 Recursos úteis
+
+- [Documentação do Expo](https://docs.expo.dev/)
+- [Documentação do React Native](https://reactnative.dev/)
+- [Tutorial do Expo](https://docs.expo.dev/tutorial/introduction/)
+
+## 💡 Dicas
+
+- Se encontrar erros, tente limpar o cache: `npx expo start -c`
+- Certifique-se de que todas as dependências foram instaladas corretamente
+- Para desenvolvimento, recomenda-se usar o Expo Go para testes rápidos
